@@ -1,0 +1,12 @@
+{
+  "name": "Kangaroo Mark",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Save Bookmarks with Title, Url, Image, Description",
+  "homepage_url": "http://127.0.0.1/Kangaroo2/BookmarkList",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs", "<all_urls>"]
+}

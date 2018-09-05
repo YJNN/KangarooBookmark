@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="jquery.js"></script>
+<script src='popup.js'></script>
+<link rel="stylesheet" href="main.css">
+</head>
+
+<body style="width: 300px;">
+	<div class="container" id="container">
+		<form id="contact" action="http://127.0.0.1/Kangaroo2/InsertBookmark" method="post" accept-charset="UTF-8">
+			<h3>Add Your Bookmark</h3>
+			<fieldset>
+				<input placeholder="Your title" type="text" id = "title" name= "title" tabindex="1" autofocus>
+			</fieldset>
+			<fieldset>
+				<input placeholder="Your url" type="text" id = "url" name = "url" tabindex="2">
+			</fieldset>
+			<fieldset>
+				<input placeholder="Your image" type="text" id = "image" name = "image" tabindex="3">
+			</fieldset>
+			<fieldset>
+				<input placeholder="Your video" type="text" id = "video" name = "video" tabindex="4">
+			</fieldset>
+			<fieldset>
+				<input placeholder="Your description" type="text" id="description" name="description" tabindex="5">
+			</fieldset>
+			<fieldset>
+				<input placeholder="Your interest" type="text" id="interest" name="interest" tabindex="6">
+			</fieldset>
+			<fieldset>
+				<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
