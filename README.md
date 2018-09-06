@@ -1,4 +1,4 @@
 # KangarooBookmark
 
  - Google Chrome Extension Program
- - JAVA, CSS, Javascript, Chrome
+ - JAVA, CSS, Javascript, Oracle, Chrome
