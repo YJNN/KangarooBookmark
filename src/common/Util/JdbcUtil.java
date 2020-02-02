@@ -12,11 +12,6 @@ import javax.naming.InitialContext;
 public class JdbcUtil {
 	  public JdbcUtil() {}
 
-	    /**
-	     * Connection을 연결한 후 멤버 attribute 인 conn 에 Connection 객체를 세팅한 후 리턴한다.
-	     * 
-	     * @return Connection
-	     */
 	    public static Connection getConnection() {
 	        Connection conn = null;
 	        try {
@@ -29,12 +24,7 @@ public class JdbcUtil {
 	        }
 	        return conn;
 	    }
-
-	    /**
-	     * DB와 Connect되었는지 여부를 Return 한다.
-	     * 
-	     * @return DB와 Connect 되었는지 여부.
-	     */
+	
 	    public static boolean isConnected(Connection conn) {
 
 	        boolean validConnection = true;
@@ -48,10 +38,7 @@ public class JdbcUtil {
 	        }
 	        return validConnection;
 	    }
-
-	    /**
-	     * Connection 객체를 시스템에 반환한다.
-	     */
+	
 	    public static void close(Connection conn) {
 
 	        if (isConnected(conn)) {
@@ -63,12 +50,6 @@ public class JdbcUtil {
 	        }
 	    }
 
-	    /**
-	     * Statement를 Close 한다.
-	     * 
-	     * @param stmt
-	     *            Statement 객체.
-	     */
 	    public static void close(Statement stmt) {
 
 	        try {
@@ -80,12 +61,6 @@ public class JdbcUtil {
 	        }
 	    }
 
-	    /**
-	     * ResultSet을 Close 한다.
-	     * 
-	     * @param result
-	     *            ResultSet 객체.
-	     */
 	    public static void close(ResultSet rset) {
 
 	        try {
@@ -96,9 +71,6 @@ public class JdbcUtil {
 	        }
 	    }
 
-	    /**
-	     * 지금까지의 트랜잭션을 Commit 처리한다.
-	     */
 	    public static void commit(Connection conn) {
 
 	        try {
@@ -109,10 +81,7 @@ public class JdbcUtil {
 	            e.printStackTrace();
 	        }
 	    }
-
-	    /**
-	     * 지금까지의 트랜잭션을 Rollback 처한다.
-	     */
+	
 	    public static void rollback(Connection conn) {
 
 	        try {
